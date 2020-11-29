@@ -9,7 +9,7 @@ sudo apt install -y \
     mosh \
     curl \
     keepassxc \
-    nextcloud-client \
+    nextcloud-desktop \
     mumble \
     git
 
