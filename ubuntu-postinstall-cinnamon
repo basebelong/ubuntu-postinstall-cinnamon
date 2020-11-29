@@ -16,7 +16,7 @@ sudo apt install -y \
 sudo apt remove ubuntu-session -y
 sudo apt autoremove -y
 
-sudo snap install signal-desktop
+sudo snap install signal-desktop wire
 
 git clone https://github.com/basebelong/install-mint-themes
 
