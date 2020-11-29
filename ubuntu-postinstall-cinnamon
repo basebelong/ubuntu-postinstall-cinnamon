@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install -y \
+    cinnamon-desktop-environment \
+    htop \
+    vim \
+    mosh \
+    curl \
+    git
+
+git clone https://github.com/basebelong/install-mint-themes /tmp/
+
+sudo bash /tmp/install-mint-themes/install-mint-themes
+
+sudo rm -rf /tmp/install-mint-themes
+
+sudo wget https://www.technocrazed.com/wp-content/uploads/2015/12/Green-Wallpaper-5.jpg -O /usr/share/backgrounds/green.jpg
+
+gsettings set org.cinnamon.desktop.background picture-uri  "file:///usr/share/backgrounds/green.jpg"
+gsettings set org.cinnamon.desktop.interface gtk-theme Mint-Y-Darker
+gsettings set org.cinnamon.theme name Mint-Y-Darker
+gsettings set org.cinnamon.desktop.interface icon-theme Mint-Y-Darker
+gsettings set org.cinnamon.desktop.wm.preferences theme Mint-Y-Dark
