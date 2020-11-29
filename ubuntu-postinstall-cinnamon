@@ -10,6 +10,9 @@ sudo apt install -y \
     curl \
     git
 
+sudo apt remove ubuntu-session -Y
+sudo apt autoremove -y
+
 git clone https://github.com/basebelong/install-mint-themes /tmp/
 
 sudo bash /tmp/install-mint-themes/install-mint-themes
@@ -23,3 +26,4 @@ gsettings set org.cinnamon.desktop.interface gtk-theme Mint-Y-Darker
 gsettings set org.cinnamon.theme name Mint-Y-Darker
 gsettings set org.cinnamon.desktop.interface icon-theme Mint-Y-Darker
 gsettings set org.cinnamon.desktop.wm.preferences theme Mint-Y-Dark
+gsettings set org.cinnamon.desktop.input-sources xkb-options "['ctrl:nocaps']"
