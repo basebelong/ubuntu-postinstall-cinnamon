@@ -24,9 +24,9 @@ sudo bash install-mint-themes/install-mint-themes
 
 sudo rm -rf install-mint-themes
 
-sudo wget https://archive-media-1.nyafuu.org/wg/image/1395/08/1395089427043.png -O /usr/share/backgrounds/green.png
+sudo wget https://www.wallpaperbetter.com/wallpaper/445/800/923/linux-tux-1080P-wallpaper.jpg -O /usr/share/backgrounds/tux_color.png
 
-gsettings set org.cinnamon.desktop.background picture-uri  "file:///usr/share/backgrounds/green.png"
+gsettings set org.cinnamon.desktop.background picture-uri  "file:///usr/share/backgrounds/tux_color.png"
 gsettings set org.cinnamon.desktop.interface gtk-theme Mint-Y-Darker
 gsettings set org.cinnamon.theme name Mint-Y-Dark
 gsettings set org.cinnamon.desktop.interface icon-theme Mint-Y-Dark
